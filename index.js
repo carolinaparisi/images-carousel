@@ -17,6 +17,10 @@ window.onload = function () {
 	});
 
 	const leftBtn = document.getElementById("left-btn");
+	//When this app run at the first time, the previous button need to have the style of a disabled button
+	leftBtn.classList.remove("button");
+	leftBtn.classList.add("change-color");
+
 	leftBtn.addEventListener("click", () => {
 		previousImg(srcImgContainer);
 	});
@@ -48,6 +52,10 @@ function nextImg(srcImgs) {
 			imageContainer.removeAttribute("class");
 			imageContainer.setAttribute("src", `resources/${srcImgs[counter]}`);
 		}, 200);
+
+		//Once it's not at the first img anymore, the button style is back
+		previousBtn.classList.remove("change-color");
+		previousBtn.classList.add("button");
 
 		if (previousBtn.hasAttribute("disabled")) {
 			previousBtn.removeAttribute("disabled");
