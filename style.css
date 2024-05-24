@@ -40,6 +40,11 @@ main {
 	box-shadow: 1px 1px 20px 6px rgba(6, 3, 2, 0.5);
 	width: 36rem;
 	border-radius: 1rem;
+	transition: 0.2s;
+}
+
+.hidden {
+	opacity: 0;
 }
 
 .material-symbols-outlined {

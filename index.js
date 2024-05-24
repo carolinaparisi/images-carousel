@@ -41,8 +41,11 @@ function nextImg(srcImgs) {
 			nextBtn.setAttribute("disabled", "");
 		}
 
-		imageContainer.removeAttribute("src");
-		imageContainer.setAttribute("src", `resources/${srcImgs[counter]}`);
+		imageContainer.setAttribute("class", "hidden");
+		setTimeout(() => {
+			imageContainer.removeAttribute("class");
+			imageContainer.setAttribute("src", `resources/${srcImgs[counter]}`);
+		}, 200);
 
 		if (previousBtn.hasAttribute("disabled")) {
 			previousBtn.removeAttribute("disabled");
@@ -63,8 +66,12 @@ function previousImg(srcImgs) {
 		if (counter === 0) {
 			previousBtn.setAttribute("disabled", "");
 		}
-		imageContainer.removeAttribute("src");
-		imageContainer.setAttribute("src", `resources/${srcImgs[counter]}`);
+
+		imageContainer.setAttribute("class", "hidden");
+		setTimeout(() => {
+			imageContainer.removeAttribute("class");
+			imageContainer.setAttribute("src", `resources/${srcImgs[counter]}`);
+		}, 200);
 
 		if (nextBtn.hasAttribute("disabled")) {
 			nextBtn.removeAttribute("disabled");
