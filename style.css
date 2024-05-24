@@ -1,0 +1,47 @@
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	background-color: rgb(243, 195, 217);
+}
+
+header {
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+	font-size: 6rem;
+	padding-top: 6rem;
+	color: rgb(201, 37, 83);
+	font-family: "Roboto", sans-serif;
+	font-weight: 400;
+	font-size: 8rem;
+	font-style: normal;
+}
+
+main {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 6rem;
+	gap: 2rem;
+}
+
+.button {
+	cursor: pointer;
+	background-color: rgb(243, 195, 217);
+	border: none;
+	color: rgb(201, 37, 83);
+}
+
+#main-image {
+	box-shadow: 1px 1px 20px 6px rgba(6, 3, 2, 0.5);
+	width: 36rem;
+	border-radius: 1rem;
+}
+
+.material-symbols-outlined {
+	font-size: 8rem !important;
+}
