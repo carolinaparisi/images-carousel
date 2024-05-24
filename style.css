@@ -50,3 +50,9 @@ main {
 .material-symbols-outlined {
 	font-size: 8rem !important;
 }
+
+.change-color {
+	background-color: rgb(243, 195, 217);
+	border: none;
+	color: rgb(105, 18, 43);
+}

@@ -39,6 +39,8 @@ function nextImg(srcImgs) {
 	if (counter < srcImgs.length) {
 		if (counter === srcImgs.length - 1) {
 			nextBtn.setAttribute("disabled", "");
+			nextBtn.classList.add("change-color");
+			nextBtn.classList.remove("button");
 		}
 
 		imageContainer.setAttribute("class", "hidden");
@@ -49,6 +51,8 @@ function nextImg(srcImgs) {
 
 		if (previousBtn.hasAttribute("disabled")) {
 			previousBtn.removeAttribute("disabled");
+			previousBtn.classList.remove("class", "change-color");
+			previousBtn.classList.add("button");
 			return;
 		}
 		return;
@@ -65,6 +69,8 @@ function previousImg(srcImgs) {
 	if (counter >= 0) {
 		if (counter === 0) {
 			previousBtn.setAttribute("disabled", "");
+			previousBtn.classList.add("change-color");
+			previousBtn.classList.remove("button");
 		}
 
 		imageContainer.setAttribute("class", "hidden");
@@ -75,6 +81,8 @@ function previousImg(srcImgs) {
 
 		if (nextBtn.hasAttribute("disabled")) {
 			nextBtn.removeAttribute("disabled");
+			nextBtn.classList.remove("class", "change-color");
+			nextBtn.classList.add("button");
 			return;
 		}
 		return;
